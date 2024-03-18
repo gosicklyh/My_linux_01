@@ -129,30 +129,6 @@ Demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
 .PHONY : Demo/fast
 
-MathFunctions.o: MathFunctions.cpp.o
-.PHONY : MathFunctions.o
-
-# target to build an object file
-MathFunctions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/MathFunctions.cpp.o
-.PHONY : MathFunctions.cpp.o
-
-MathFunctions.i: MathFunctions.cpp.i
-.PHONY : MathFunctions.i
-
-# target to preprocess a source file
-MathFunctions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/MathFunctions.cpp.i
-.PHONY : MathFunctions.cpp.i
-
-MathFunctions.s: MathFunctions.cpp.s
-.PHONY : MathFunctions.s
-
-# target to generate assembly for a file
-MathFunctions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/MathFunctions.cpp.s
-.PHONY : MathFunctions.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -186,9 +162,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Demo"
-	@echo "... MathFunctions.o"
-	@echo "... MathFunctions.i"
-	@echo "... MathFunctions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

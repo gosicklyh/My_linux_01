@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hollow/Vs-Cpp/this-01/MathFunctions.cpp" "CMakeFiles/Demo.dir/MathFunctions.cpp.o" "gcc" "CMakeFiles/Demo.dir/MathFunctions.cpp.o.d"
   "/home/hollow/Vs-Cpp/this-01/main.cpp" "CMakeFiles/Demo.dir/main.cpp.o" "gcc" "CMakeFiles/Demo.dir/main.cpp.o.d"
   )
 

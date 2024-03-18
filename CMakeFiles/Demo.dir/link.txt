@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/Demo.dir/MathFunctions.cpp.o CMakeFiles/Demo.dir/main.cpp.o -o Demo 
+/usr/bin/c++ CMakeFiles/Demo.dir/main.cpp.o -o Demo 
