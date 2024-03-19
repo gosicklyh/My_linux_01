@@ -1,39 +1,50 @@
-#include <iostream>
 #include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <unistd.h>
 
-using namespace std;
-struct cmp {
-  int a;
-  int b;
-};
+#define MAX 50
+// 全局变量
+int number;
 
-void *callback(void *arg) {
-  for (int i = 0; i < 5; i++) {
-    cout << "子线程:i =" << i << endl;
+// 线程处理函数
+void *funcA_num(void *arg) {
+  for (int i = 0; i < MAX; ++i) {
+    int cur = number;
+    cur++;
+    usleep(10);
+    number = cur;
+    printf("Thread A, id = %lu, number = %d\n", pthread_self(), number);
   }
-  cout << "子线程ID: " << pthread_self() << endl;
-  cmp *ta = (cmp *)arg;
-  ta->a = 1;
-  ta->b = 101;
-  pthread_exit(ta);
+
   return NULL;
 }
 
-int main() {
-
-  pthread_t tid;
-  cmp ss;
-  pthread_create(&tid, NULL, callback, &ss);
-  for (int i = 1; i <= 5; i++) {
-    cout << "主线程i= " << i << endl;
+void *funcB_num(void *arg) {
+  for (int i = 0; i < MAX; ++i) {
+    int cur = number;
+    cur++;
+    number = cur;
+    printf("Thread B, id = %lu, number = %d\n", pthread_self(), number);
+    usleep(5);
   }
-  void *ptr = NULL;
-  pthread_join(tid, &ptr);
-  // cmp *pp = (cmp *)ptr;
-  cout << ss.a << " " << ss.b << endl;
-  cout << "主线程ID: " << pthread_self() << endl;
-  pthread_detach(tid);
-  pthread_exit(NULL);
+
+  return NULL;
+}
+
+int main(int argc, const char *argv[]) {
+  pthread_t p1, p2;
+
+  // 创建两个子线程
+  pthread_create(&p1, NULL, funcA_num, NULL);
+  pthread_create(&p2, NULL, funcB_num, NULL);
+
+  // 阻塞，资源回收
+  pthread_join(p1, NULL);
+  pthread_join(p2, NULL);
+
   return 0;
 }
