@@ -4,7 +4,7 @@
 CMakeFiles/Demo.dir/main.cpp.o
  /home/hollow/Vs-Cpp/this-01/main.cpp
  /usr/include/stdc-predef.h
- /usr/include/c++/11/iostream
+ /usr/include/c++/11/cstddef
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h
  /usr/include/features.h
@@ -17,6 +17,8 @@ CMakeFiles/Demo.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
  /usr/include/c++/11/pstl/pstl_config.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+ /usr/include/c++/11/iostream
  /usr/include/c++/11/ostream
  /usr/include/c++/11/ios
  /usr/include/c++/11/iosfwd
@@ -28,7 +30,6 @@ CMakeFiles/Demo.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
  /usr/include/x86_64-linux-gnu/bits/wchar.h
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h
@@ -182,6 +183,27 @@ CMakeFiles/Demo.dir/main.cpp.o
  /usr/include/c++/11/bits/ostream.tcc
  /usr/include/c++/11/istream
  /usr/include/c++/11/bits/istream.tcc
+ /usr/include/string.h
+ /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/sys/stat.h
+ /usr/include/x86_64-linux-gnu/bits/stat.h
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h
+ /usr/include/x86_64-linux-gnu/bits/statx.h
+ /usr/include/linux/stat.h
+ /usr/include/linux/types.h
+ /usr/include/x86_64-linux-gnu/asm/types.h
+ /usr/include/asm-generic/types.h
+ /usr/include/asm-generic/int-ll64.h
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h
+ /usr/include/asm-generic/bitsperlong.h
+ /usr/include/linux/posix_types.h
+ /usr/include/linux/stddef.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h
+ /usr/include/asm-generic/posix_types.h
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h
  /usr/include/unistd.h
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h
  /usr/include/x86_64-linux-gnu/bits/environments.h
